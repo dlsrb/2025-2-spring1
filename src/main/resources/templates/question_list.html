@@ -7,13 +7,16 @@
 <body>
 
 <h2>질문목록 황인규제작 2025.11.7</h2>
-<table>
-    <thead>
+<link rel="stylesheet" type="text/css" th:href="@{/bootstrap.min.css}">
+
+<div class="container my-3">
+<table class="table">
+    <thead class="table-dark">
         <tr>
             <th>제목</th>
             <th>작성일시</th>
         </tr>
-    </thead>
+    </thead >
     <tbody>
         <tr th:each="question : ${questionList}">
             <td>
@@ -25,6 +28,7 @@
         </tr>
     </tbody>
 </table>
+</div>
 
 </body>
 </html>
